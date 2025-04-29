@@ -1,1 +1,1 @@
-# JSLab1
+# JSLabs
