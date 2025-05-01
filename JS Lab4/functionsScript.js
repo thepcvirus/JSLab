@@ -131,7 +131,12 @@ function DisplayTable() {
                     tr.classList.add('bg-r');
                 }
                 else{
-                    tr.classList.add('bg-g');
+                    if(TData[rows][2] >= 75){
+                        tr.classList.add('bg-g');
+                    }
+                    else{
+                        tr.classList.add('bg-w');
+                    }
                 }
                 table.appendChild(tr);
             }
@@ -157,7 +162,12 @@ function DisplayTable() {
                     tr.classList.add('bg-r');
                 }
                 else{
-                    tr.classList.add('bg-g');
+                    if(TData[rows][2] >= 75){
+                        tr.classList.add('bg-g');
+                    }
+                    else{
+                        tr.classList.add('bg-w');
+                    }
                 }
                 table.appendChild(tr);
                 
@@ -182,7 +192,12 @@ function DisplayTable() {
                 tr.classList.add('bg-r');
             }
             else{
-                tr.classList.add('bg-g');
+                if(TData[rows][2] >= 75){
+                    tr.classList.add('bg-g');
+                }
+                else{
+                    tr.classList.add('bg-w');
+                }
             }
             table.appendChild(tr);
         }
@@ -216,7 +231,7 @@ form.onsubmit = (e) => {
 };
 
 let names = [[], [], []];
-let TData = [["SD", "Mohamed", 50], ["OS", "Ahmed", 70], ["EL", "Zeyad", 10]];
+let TData = [["SD", "Mohamed", 80], ["OS", "Ahmed", 70], ["EL", "Zeyad", 50]];
 let filterstate = -1;
 
 document.getElementById("filter").onchange = () => {
