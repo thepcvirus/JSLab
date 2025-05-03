@@ -1,0 +1,119 @@
+<!Doctype HTML>
+<html>
+
+<head>
+    <title>Mohamed Mostafa lab4 JS</title>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Mohamed Mostafa">
+    <meta name="Description" content="this is a description">
+    <meta name="keywords" content="HTML, Mohamed Mostafa, Special Case Game, Steam">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    img{
+        max-width: 300px;
+    }
+
+table{
+    width: 300px;
+}
+
+    table tr{
+        height: 30px;
+        //#background-color: red;
+    }
+
+    table button{
+        background-image: url(delete.png);
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        margin: auto;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .bg-g{
+        background-color: greenyellow;
+    }
+
+    .bg-r{
+        background-color: red;
+    }
+
+    .bg-w{
+        background-color: #ccc;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Mohamed Mostafa Hassan Lab 4</h1>
+<div>
+    
+    <img src="474070055_9023661501050557_638806122148089617_n.jpg">
+    <img src="474592692_4074341249476546_269890172763587950_n.jpg">
+    <img src="andrew-mamulat-2.jpg">
+    <img src="DSC_0459.webp">
+    <br>
+    <button onclick="isSliding = false; DisplayOneImage(1);">next</button>
+    <button onclick="isSliding = false; DisplayOneImage(-1);">previous</button>
+    <button onclick="changeSlidertype(true);">slide show</button>
+    <button onclick="changeSlidertype(false);">stop</button>
+</div>
+
+<form>
+    <label>Department</label>
+    <input type="radio" name="Department" value="SD" checked>
+    <label>SD</label>
+    <input type="radio" name="Department" value="OS">
+    <label>OS</label>
+    <input type="radio" name="Department" value="EL">
+    <label>EL</label>
+    <br>
+    <label>StudnetName</label>
+    <input id="Sname" type="text" name="name" value="Name">
+    <br>
+    <label>StudnetGrade</label>
+    <input id="Sgrade" type="text" name="grade" value="50">
+    <br>
+    <button onsubmit="this.preventDefault();" onclick="addToTable();"> Add </button>
+    <br>
+    <h3>FeedBack</h3>
+    <label>Filter</label>
+<select id="filter" name="filter">
+    <option value="2">all</option>
+    <option value="1">passed</option>
+  <option value="0">failed</option>
+</select>
+<select id="sort" name="sort">
+    <option value="-1">No Sort</option>
+    <option value="0">By Name</option>
+  <option value="1">By Grade</option>
+</select>
+</form>
+
+
+<table>
+<tr>
+    <td>Eman</td>
+    <td>0</td>
+    <td>Button</td>
+</tr>
+<tr>
+    <td>Eman</td>
+    <td>0</td>
+    <td>Button</td>
+</tr>
+<tr>
+    <td>Eman</td>
+    <td>0</td>
+    <td>Button</td>
+</tr>
+</table>
+</body>
+<script src="functionsScript.js">
+</script>
+</html>

@@ -1,119 +1,173 @@
-<!Doctype HTML>
+<!DOCTYPE html>
 <html>
-
 <head>
-    <title>Mohamed Mostafa lab4 JS</title>
-    <meta charset="UTF-8">
-    <meta name="Author" content="Mohamed Mostafa">
-    <meta name="Description" content="this is a description">
-    <meta name="keywords" content="HTML, Mohamed Mostafa, Special Case Game, Steam">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-    img{
-        max-width: 300px;
-    }
-
-table{
-    width: 300px;
-}
-
-    table tr{
-        height: 30px;
-        //#background-color: red;
-    }
-
-    table button{
-        background-image: url(delete.png);
-        background-size: cover;
-        width: 20px;
-        height: 20px;
-        margin: auto;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
-        text-align: center;
-    }
-
-    .bg-g{
-        background-color: greenyellow;
-    }
-
-    .bg-r{
-        background-color: red;
-    }
-
-    .bg-w{
-        background-color: #ccc;
-    }
-    </style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 </head>
-
 <body>
-    <h1>Mohamed Mostafa Hassan Lab 4</h1>
-<div>
+
+    <form >
+        <label>Name</label>
+        <input id="name" type="text">
+        <label>Age</label>
+        <input id="age" type="text">
+        
+    </form>
+    <button onclick="print()">Submit</button>
+
+    <img src="../Screenshot (399).png">
+    <img src="../Screenshot (397).png">
+    <img src="../Screenshot (398).png">
+
+    <select id="cities" name="cities">
+        <option class="fontBlue BGrey" value="">-- Please choose a city --</option>
+        <option class="fontBlue BGrey" value="new-york">New York</option>
+        <option class="fontBlue BGrey" value="london">London</option>
+        <option class="fontBlue"value="tokyo">Tokyo</option>
+        <option class="fontBlue"value="paris">Paris</option>
+        <option class="BGrey" value="sydney">Sydney</option>
+    </select>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+            <th>Hire Date</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>John Smith</td>
+            <td>Manager</td>
+            <td>$75,000</td>
+            <td>2020-05-15</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Sarah Johnson</td>
+            <td>Developer</td>
+            <td>$65,000</td>
+            <td>2021-02-10</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Michael Brown</td>
+            <td>Designer</td>
+            <td>$58,000</td>
+            <td>2019-11-22</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>Emily Davis</td>
+            <td>Analyst</td>
+            <td>$62,000</td>
+            <td>2022-03-05</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>Robert Wilson</td>
+            <td>Intern</td>
+            <td>$35,000</td>
+            <td>2023-01-15</td>
+        </tr>
+    </table>
     
-    <img src="474070055_9023661501050557_638806122148089617_n.jpg">
-    <img src="474592692_4074341249476546_269890172763587950_n.jpg">
-    <img src="andrew-mamulat-2.jpg">
-    <img src="DSC_0459.webp">
-    <br>
-    <button onclick="isSliding = false; DisplayOneImage(1);">next</button>
-    <button onclick="isSliding = false; DisplayOneImage(-1);">previous</button>
-    <button onclick="changeSlidertype(true);">slide show</button>
-    <button onclick="changeSlidertype(false);">stop</button>
-</div>
+    <h2>2. Product Inventory</h2>
+    <table>
+        <tr>
+            <th>Product ID</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>In Stock</th>
+        </tr>
+        <tr>
+            <td>P1001</td>
+            <td>Laptop</td>
+            <td>Electronics</td>
+            <td>$899.99</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>P1002</td>
+            <td>Desk Chair</td>
+            <td>Furniture</td>
+            <td>$199.50</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>P1003</td>
+            <td>Smartphone</td>
+            <td>Electronics</td>
+            <td>$699.00</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>P1004</td>
+            <td>Notebook</td>
+            <td>Stationery</td>
+            <td>$4.99</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>P1005</td>
+            <td>Coffee Maker</td>
+            <td>Appliances</td>
+            <td>$49.99</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+    
+    <h2>3. Student Grades</h2>
+    <table>
+        <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Math</th>
+            <th>Science</th>
+            <th>English</th>
+        </tr>
+        <tr>
+            <td>S2001</td>
+            <td>Alice Chen</td>
+            <td>A</td>
+            <td>B+</td>
+            <td>A-</td>
+        </tr>
+        <tr>
+            <td>S2002</td>
+            <td>David Kim</td>
+            <td>B</td>
+            <td>A</td>
+            <td>B+</td>
+        </tr>
+        <tr>
+            <td>S2003</td>
+            <td>Maria Garcia</td>
+            <td>A-</td>
+            <td>A-</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>S2004</td>
+            <td>James Wilson</td>
+            <td>C+</td>
+            <td>B</td>
+            <td>B-</td>
+        </tr>
+        <tr>
+            <td>S2005</td>
+            <td>Sophia Patel</td>
+            <td>A</td>
+            <td>A</td>
+            <td>A+</td>
+        </tr>
+    </table>
+    
 
-<form>
-    <label>Department</label>
-    <input type="radio" name="Department" value="SD" checked>
-    <label>SD</label>
-    <input type="radio" name="Department" value="OS">
-    <label>OS</label>
-    <input type="radio" name="Department" value="EL">
-    <label>EL</label>
-    <br>
-    <label>StudnetName</label>
-    <input id="Sname" type="text" name="name" value="Name">
-    <br>
-    <label>StudnetGrade</label>
-    <input id="Sgrade" type="text" name="grade" value="50">
-    <br>
-    <button onsubmit="this.preventDefault();" onclick="addToTable();"> Add </button>
-    <br>
-    <h3>FeedBack</h3>
-    <label>Filter</label>
-<select id="filter" name="filter">
-    <option value="2">all</option>
-    <option value="1">passed</option>
-  <option value="0">failed</option>
-</select>
-<select id="sort" name="sort">
-    <option value="-1">No Sort</option>
-    <option value="0">By Name</option>
-  <option value="1">By Grade</option>
-</select>
-</form>
-
-
-<table>
-<tr>
-    <td>Eman</td>
-    <td>0</td>
-    <td>Button</td>
-</tr>
-<tr>
-    <td>Eman</td>
-    <td>0</td>
-    <td>Button</td>
-</tr>
-<tr>
-    <td>Eman</td>
-    <td>0</td>
-    <td>Button</td>
-</tr>
-</table>
 </body>
-<script src="functionsScript.js">
-</script>
+<script src="script.js"></script>
 </html>
